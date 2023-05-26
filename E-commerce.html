@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Foodlie</title>
+    <link rel="stylesheet" href="E-commerce.css">
+    <link rel="icon" href="./img/achu.jpg">
+    <link rel="stylesheet" type="text/css" href="mobile-first.css">
+</head>
+
+<body>
+    <header>
+        <h1>Foodlie</h1>
+    </header>
+    <section class="banner">
+        <div class="banner-foodlie">
+            <img src="img/achu.jpg" alt="Foodlie welcome banner">
+        </div>
+        <div class="welcome">
+            <h2>Welcome to <br><span>Foodlie</span></h2>
+        </div>
+    </section>
+    
+    <div id="my-cart">
+        <p>CART ITEMS</p>
+    </div>
+    <div id="cartItems"></div>
+    <main>
+        <article>
+            <h2>We are Foodlie</h2>
+            <p>Chooose Foodlie! The best healthies food website</p>
+        </article>
+        <ul class="images">
+            <li>
+                <div><img src="img/achu.jpg" alt="achu">
+                    <h2>Achu</h2>
+                    <h3 class="price">3,000FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Achu')" >Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/ndole.jpg" alt="ndole">
+                    <h2>Ndole</h2>
+                    <h3 class="price">2,500FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Ndole')">Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/koki.jpg" alt="koki">
+                    <h2>Koki</h2>
+                    <h3 class="price">2,500FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Koki')">Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/okok.jpg" alt="okok">
+                    <h2>Okok</h2>
+                    <h3 class="price">2,000FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Okok')">Add to cart</button>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="images">
+            <li>
+                <div><img src="img/cornchaff.jpg" alt="cornchaff">
+                    <h2>Cornchaff</h2>
+                    <h3 class="price">2,000FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Cornchaff')">Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/soya.jpg" alt="soya">
+                    <h2>Soya</h2>
+                    <h3 class="price">3,000FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Soya')">Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/jolof.jpg" alt="jolof">
+                    <h2>Rice</h2>
+                    <h3 class="price">3,000FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Jolof Rice')">Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/fufu.jpg" alt="fufu">
+                    <h2>Fufu Corn</h2>
+                    <h3 class="price">3,000FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Fufu corn')">Add to cart</button>
+                </div>
+            </li>
+        </ul>
+        
+        <ul class="images">
+            <li>
+                <div><img src="img/achu.jpg" alt="achu">
+                    <h2>Achu</h2>
+                    <h3 class="price">3,000FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Achu')">Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/ndole.jpg" alt="ndole">
+                    <h2>Ndole</h2>
+                    <h3 class="price">2,500FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Ndole')">Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/koki.jpg" alt="koki">
+                    <h2>Koki</h2>
+                    <h3 class="price">2,500FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Koki')">Add to cart</button>
+                </div>
+            </li>
+            <li>
+                <div><img src="img/okok.jpg" alt="okok">
+                    <h2>Okok</h2>
+                    <h3 class="price">2,000FCFA</h3>
+                    <span class="discount">-10%</span>
+                    <button class="my-cart" onclick="clickedMe('Okok')">Add to cart</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <section class="join">
+        <div class="pagination">
+            <a href="#"><< Previous</a>
+            <a href="#" title="Fruits">1</a>
+            <a href="#" title="Dessert">2</a>
+            <a href="#" title="Brevages">3</a>
+            <a href="#">Next >></a>
+        </div>
+    </section>
+    <footer>
+        <p class="copyright">Copyright 2023 Foodlie</p>
+    </footer>
+
+    <script src="E-commerce.js">
+
+    </script>
+</body>
+
+</html>
